@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "REI Hub tweaks",
+  "version": "0.1.0",
+  "description": "Auto-pick sole-option Equity Account (Owner Funds) and default Unit to 'All Units' after choosing a Property.",
+  "content_scripts": [
+    {
+      "matches": ["https://app.reihub.net/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
